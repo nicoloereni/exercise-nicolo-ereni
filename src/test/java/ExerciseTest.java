@@ -24,11 +24,4 @@ public class ExerciseTest {
 
     }
 
-    @Test
-    public void removeCharReturnProperResponse() throws Exception {
-
-        assertEquals("cio", Exercise.removeChar('a', "ciao"));
-        assertEquals("cia", Exercise.removeChar('a', "ciaa"));
-
-    }
 }
