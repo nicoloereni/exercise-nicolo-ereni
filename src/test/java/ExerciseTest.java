@@ -16,7 +16,7 @@ public class ExerciseTest {
     @Test
     public void areAnagramsReturnProperResponse() throws Exception {
 
-        assertTrue(Exercise.areAnagrams("codroipo", "porcodio"));
+        assertTrue(Exercise.areAnagrams("palindrom", "romdinlap"));
         assertFalse(Exercise.areAnagrams("atest", "notanagram"));
         assertFalse(Exercise.areAnagrams("atest", "notan"));
         assertFalse(Exercise.areAnagrams("atest", "teste"));

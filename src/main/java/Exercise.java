@@ -3,10 +3,12 @@ public class Exercise {
     //Ex 1
     public static String replaceChar(String textToMod, char replaceThis, char replaceWith) {
 
-        return textToMod.chars().mapToObj(e -> (char) e)
+        return textToMod.chars()
+                .mapToObj(e -> (char) e)
                 .map(c -> replace(replaceThis, replaceWith, c))
                 .map(Object::toString)
-                .reduce((a, b) -> (a + b)).get();
+                .reduce((a, b) -> (a + b))
+                .get();
 
     }
 
